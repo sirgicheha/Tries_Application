@@ -1,4 +1,4 @@
-# Tries Application
+# Tries Dictionary Application
 ## Group 2 
 This application is a dictionary with autocomplete functionality. It uses the Trie data structure to efficiently store and retrieve words. The graphical user interface (GUI) is built with the tkinter library.
 
