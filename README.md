@@ -1,6 +1,6 @@
 # Tries Application
 ## Group 2 
-This application is a dictionary with autocomplete functionality. It uses a data structure called a Trie to efficiently store and retrieve words. The graphical user interface (GUI) is built with the tkinter library.
+This application is a dictionary with autocomplete functionality. It uses the Trie data structure to efficiently store and retrieve words. The graphical user interface (GUI) is built with the tkinter library.
 
 ## Group Members
 1. Samuel Gicheha - SCT212-0118/2022
