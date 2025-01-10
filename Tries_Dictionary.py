@@ -17,7 +17,7 @@ class Trie:
             if char not in node.children:
                 node.children[char] = TrieNode()
             node = node.children[char]
-        node.is_word = True 
+        node.is_word = True
 
 class DictionaryApp:
     def _init_(self, root):
@@ -64,8 +64,8 @@ class DictionaryApp:
         for suggestion in suggestions:
             self.suggestion_listbox.insert(tk.END, suggestion)
 
-		def add_word(self):
-        """Add a word to the Trie."""
+    def add_word(self):
+        # Add a word to the Trie
         word = self.word_var.get().strip()
         if word:
             self.trie.insert(word)
@@ -73,8 +73,8 @@ class DictionaryApp:
         else:
             messagebox.showwarning("Input Error", "Please enter a word to add.")
 
-		def check_word(self):
-        """Check if a word exists in the Trie."""
+    def check_word(self):
+        # Check if a word exists in the Trie
         word = self.word_var.get().strip()
         if word:
             exists = self.trie.search(word)
@@ -85,8 +85,8 @@ class DictionaryApp:
         else:
             messagebox.showwarning("Input Error", "Please enter a word to check.")
 
-		def remove_word(self):
-        """Remove a word from the Trie."""
+    def remove_word(self): 
+        # Remove a word from the Trie
         word = self.word_var.get().strip()
         if word:
             self.trie.remove(word)
