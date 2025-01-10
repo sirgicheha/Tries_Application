@@ -50,7 +50,7 @@ The application starts by creating a Tkinter window and initializing the Diction
 ### 2. Checking a Word
 - Type a word in the input field and click the "Check Word" button. A message will indicate whether the word exists in the dictionary.
   
-#3# 3. Removing a Word
+### 3. Removing a Word
 - Type a word in the input field and click the "Remove Word" button. A success message will confirm the removal.
   
 ### 4. Autocomplete Suggestions
