@@ -1,8 +1,23 @@
-<<<<<<< HEAD
 import tkinter as tk
 from tkinter import Listbox, StringVar, messagebox
 
-=======
+class TrieNode:
+    def _init_(self):
+        self.children = {}
+        self.is_word = False
+
+class Trie:
+    def _init_(self):
+        self.root = TrieNode()
+
+    def insert(self, word):
+        """Insert a word into the Trie."""
+        node = self.root
+        for char in word:
+            if char not in node.children:
+                node.children[char] = TrieNode()
+            node = node.children[char]
+        node.is_word = True 
 
 class DictionaryApp:
     def _init_(self, root):
@@ -35,10 +50,9 @@ class DictionaryApp:
 
         self.remove_button = tk.Button(self.root, text="Remove Word", command=self.remove_word)
         self.remove_button.pack(pady=5)
-=======
->>>>>>> 7d124cdaf769ddf17c6e8594541ba5ecb7671e4b
+
 # GUI buttons implementation
-def on_key_release(self, event):
+    def on_key_release  (self, event):
         """Handle key release event to update suggestions."""
         prefix = self.word_var.get()
         suggestions = self.trie.suggest(prefix)
@@ -50,7 +64,7 @@ def on_key_release(self, event):
         for suggestion in suggestions:
             self.suggestion_listbox.insert(tk.END, suggestion)
 
-    def add_word(self):
+		def add_word(self):
         """Add a word to the Trie."""
         word = self.word_var.get().strip()
         if word:
@@ -59,7 +73,7 @@ def on_key_release(self, event):
         else:
             messagebox.showwarning("Input Error", "Please enter a word to add.")
 
-    def check_word(self):
+		def check_word(self):
         """Check if a word exists in the Trie."""
         word = self.word_var.get().strip()
         if word:
@@ -71,7 +85,7 @@ def on_key_release(self, event):
         else:
             messagebox.showwarning("Input Error", "Please enter a word to check.")
 
-    def remove_word(self):
+		def remove_word(self):
         """Remove a word from the Trie."""
         word = self.word_var.get().strip()
         if word:
