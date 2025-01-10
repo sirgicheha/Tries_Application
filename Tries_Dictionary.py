@@ -1,3 +1,6 @@
+import tkinter as tk
+from tkinter import Listbox, StringVar, messagebox
+
 # GUI buttons implementation
 def on_key_release(self, event):
         """Handle key release event to update suggestions."""
