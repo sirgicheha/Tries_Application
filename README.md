@@ -40,7 +40,7 @@ This class creates the GUI for the application and handles user interactions. It
 - check_word(): Checks if a word exists in the Trie and displays the result.
 - remove_word(): Removes a word from the Trie and displays a success message.
   
-4. Main Execution Block
+## 4. Main Execution Block
 The application starts by creating a Tkinter window and initializing the DictionaryApp.
 
 Usage
